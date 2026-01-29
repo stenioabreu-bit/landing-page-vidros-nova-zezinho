@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Somos | Vidraçaria Zezinho - Vila Maria, São Paulo</title>
+  <meta name="description" content="Conheça a Vidraçaria Zezinho. Mais de 22 anos de experiência em vidraçaria, atendendo São Paulo, litoral e interior.">
+  
+  <link rel="icon" type="image/png" href="assets/logo.PNG">
+  <link rel="apple-touch-icon" href="assets/logo.PNG">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a1a; line-height: 1.6; background: #fafafa; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    header { background: #fff; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid #eee; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 90px; }
+    nav { display: flex; gap: 32px; }
+    nav a { text-decoration: none; color: #555; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; position: relative; }
+    nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #9d1b19; transition: width 0.3s ease; }
+    nav a:hover, nav a.active { color: #9d1b19; }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+    
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 10px; font-weight: 600; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: none; cursor: pointer; font-size: 0.95rem; }
+    .btn-primary { background: linear-gradient(135deg, #9d1b19, #b82220); color: #fff; box-shadow: 0 4px 15px rgba(157,27,25,0.3); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(157,27,25,0.4); }
+    .btn-white { background: #fff; color: #9d1b19; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .btn-white:hover { transform: translateY(-3px); }
+</style>
+</head>
+<body>
+
+<style>
+    .page-hero { background: linear-gradient(rgba(157,27,25,0.7), rgba(122,21,19,0.7)), url('https://media.istockphoto.com/id/2167770678/pt/foto/glaziers-place-a-large-sheet-of-thick-glass-on-the-table-by-hand-glass-work.webp?a=1&b=1&s=612x612&w=0&k=20&c=PVEEWF2Shgj3JrkUG-xUuJgdh42Tp_QoVqVT3uCCULU=') center 40%/100%; padding: 200px 0 200px; text-align: center; }
+    .page-hero h1 { font-size: 3rem; color: #fff; font-weight: 800; margin-bottom: 16px; }
+    .page-hero p { font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto; }
+    
+    .about-section { padding: 100px 0; background: #fff; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-content span { display: inline-block; background: rgba(157,27,25,0.1); color: #9d1b19; padding: 8px 20px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
+    .about-content h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 24px; line-height: 1.2; }
+    .about-content p { color: #555; font-size: 1.1rem; margin-bottom: 20px; line-height: 1.8; }
+    .about-img { position: relative; }
+    .about-img-main { background: linear-gradient(135deg, #9d1b19, #c42b28); border-radius: 24px; height: 450px; display: flex; align-items: center; justify-content: center; box-shadow: 0 25px 50px rgba(157,27,25,0.3); }
+    .about-img-main img { max-height: 220px; filter: brightness(0) invert(1); }
+    
+    .stats-section { padding: 80px 0; background: linear-gradient(rgba(26,26,26,0.9), rgba(26,26,26,0.9)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=870&auto=format&fit=crop') center/cover fixed; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+    .stat-item { padding: 30px; }
+    .stat-number { font-size: 3.5rem; font-weight: 800; color: #9d1b19; margin-bottom: 8px; }
+    .stat-label { color: rgba(255,255,255,0.8); font-size: 1rem; }
+    
+    .features-section { padding: 100px 0; background: #fafafa; }
+    .features-header { text-align: center; margin-bottom: 60px; }
+    .features-header span { display: inline-block; background: rgba(157,27,25,0.1); color: #9d1b19; padding: 8px 20px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
+    .features-header h2 { font-size: 2.5rem; font-weight: 800; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .feature-card { background: #fff; border-radius: 20px; padding: 36px; border: 1px solid #eee; transition: all 0.4s ease; }
+    .feature-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.08); border-color: #9d1b19; }
+    .feature-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #9d1b19, #c42b28); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+    .feature-icon svg { width: 32px; height: 32px; stroke: #fff; fill: none; stroke-width: 1.5; }
+    .feature-card h3 { font-size: 1.3rem; margin-bottom: 12px; font-weight: 700; }
+    .feature-card p { color: #666; font-size: 1rem; line-height: 1.7; }
+</style>
+
+<style>
+    .schedule-section { padding: 60px 0; background: #fff; }
+    .schedule-box { background: linear-gradient(135deg, #f8f8f8, #fff); border-radius: 20px; padding: 50px; max-width: 700px; margin: 0 auto; text-align: center; border: 1px solid #eee; }
+    .schedule-box h3 { font-size: 1.8rem; margin-bottom: 30px; color: #1a1a1a; }
+    .schedule-times { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
+    .schedule-item { text-align: center; padding: 20px 30px; background: #fff; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+    .schedule-item strong { display: block; color: #9d1b19; font-size: 1.1rem; margin-bottom: 8px; }
+    .schedule-item span { color: #555; font-size: 1rem; }
+    
+    .cta-section { padding: 80px 0; background: linear-gradient(135deg, #9d1b19 0%, #7a1513 100%); text-align: center; }
+    .cta-section h2 { color: #fff; font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 32px; }
+    
+    footer { background: #1a1a1a; padding: 60px 0 24px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 24px; }
+    .footer-logo img { height: 80px; filter: brightness(0) invert(1); }
+    footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+    .footer-copy { text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+    
+    .whatsapp { position: fixed; bottom: 24px; right: 24px; width: 64px; height: 64px; background: linear-gradient(135deg, #25D366, #128C7E); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 6px 24px rgba(37,211,102,0.5); z-index: 99; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .whatsapp:hover { transform: scale(1.15) rotate(10deg); box-shadow: 0 10px 35px rgba(37,211,102,0.6); }
+    .whatsapp img { width: 34px; height: 34px; filter: brightness(0) invert(1); }
+    
+    /* Mobile Menu */
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 10px; z-index: 101; }
+    .menu-toggle span { width: 28px; height: 3px; background: #2b2b2b; border-radius: 3px; transition: all 0.3s ease; }
+    .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+    
+    .mobile-nav { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; padding: 100px 30px 30px; box-shadow: -5px 0 30px rgba(0,0,0,0.1); transition: right 0.3s ease; z-index: 100; display: flex; flex-direction: column; gap: 0; }
+    .mobile-nav.active { right: 0; }
+    .mobile-nav a { text-decoration: none; color: #2b2b2b; font-weight: 600; font-size: 1.1rem; padding: 16px 0; border-bottom: 1px solid #eee; transition: all 0.3s ease; }
+    .mobile-nav a:hover, .mobile-nav a.active { color: #9d1b19; padding-left: 10px; }
+    .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 99; }
+    .overlay.active { opacity: 1; visibility: visible; }
+    
+    @media (max-width: 768px) {
+      .page-hero h1 { font-size: 2rem; }
+      .page-hero { padding: 150px 0 80px; background-size: cover !important; }
+      nav { display: none; }
+      .menu-toggle { display: flex; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .stat-number { font-size: 2.5rem; }
+    }
+</style>
+
+
+<header>
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.PNG" alt="Vidraçaria Zezinho">
+    </a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="quem-somos.html" class="active">Quem Somos</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-nav">
+  <a href="index.html">Início</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="quem-somos.html" class="active">Quem Somos</a>
+  <a href="index.html#contato">Contato</a>
+</div>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu-toggle').classList.toggle('active');
+  document.querySelector('.mobile-nav').classList.toggle('active');
+  document.querySelector('.overlay').classList.toggle('active');
+  document.body.style.overflow = document.querySelector('.mobile-nav').classList.contains('active') ? 'hidden' : '';
+}
+</script>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Quem Somos</h1>
+    <p>Conheça a história e os valores da Vidraçaria Zezinho<p>
+    <p>Há 22 anos entregando excelente
+ serviço com dedicação e profissionalismo.<p>
+        <br><br>
+        <strong>Atendemos toda a região de São Paulo, litoral e interior.</strong>
+    </p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <span>Nossa História</span>
+        <h2>Quem é a Vidraçaria Zezinho?</h2>
+        <p>A Vidraçaria Zezinho é uma empresa com <strong>mais de 22 anos de experiência</strong> no ramo de vidraçaria, atendendo a todas as regiões da cidade de São Paulo.</p>
+        <p>Contamos com uma equipe de <strong>profissionais qualificados</strong> com IPI completo para garantir o bom atendimento aos nossos clientes.</p>
+        <p>Executamos também serviços no <strong>litoral e no interior</strong> do estado. Conte com a gente!</p>
+        <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20Vidraçaria%20Zezinho." class="btn btn-primary" style="margin-top: 16px;">
+          <img src="assets/whatsapp-svgrepo-com.svg" alt="WhatsApp" style="width: 20px; height: 20px; filter: brightness(0) invert(1);">
+          Fale Conosco
+        </a>
+      </div>
+      <div class="about-img">
+        <div class="about-img-main">
+          <img src="assets/logo.PNG" alt="Vidraçaria Zezinho">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">22+</div>
+        <div class="stat-label">Anos de Experiência</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Clientes Satisfeitos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">SP</div>
+        <div class="stat-label">Capital, Litoral e Interior</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="features-section">
+  <div class="container">
+    <div class="features-header">
+      <span>Por que nos escolher</span>
+      <h2>Nossos Diferenciais</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Qualidade Garantida</h3>
+        <p>Trabalhamos apenas com materiais de primeira linha e seguimos todas as normas de segurança.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Pontualidade</h3>
+        <p>Cumprimos prazos e horários combinados. Seu tempo é valioso para nós.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Equipe Qualificada</h3>
+        <p>Profissionais com IPI completo e treinamento constante para melhor atendê-lo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Ampla Cobertura</h3>
+        <p>Atendemos toda São Paulo, litoral e interior do estado com a mesma qualidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule-section">
+  <div class="container">
+    <div class="schedule-box">
+      <h3>Horário de Atendimento</h3>
+      <div class="schedule-times">
+        <div class="schedule-item">
+          <strong>Segunda a Quinta</strong>
+          <span>8:00 às 18:00</span>
+        </div>
+        <div class="schedule-item">
+          <strong>Sexta-feira</strong>
+          <span>8:00 às 17:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Conte com a gente!</h2>
+    <p>Estamos prontos para transformar seu projeto em realidade</p>
+    <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-white">
+      <img src="assets/whatsapp-svgrepo-com.svg" alt="WhatsApp" style="width: 22px; height: 22px;">
+      Solicitar Orçamento
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/logo.PNG" alt="Vidraçaria Zezinho">
+      </a>
+      <p>Rua Dias da Silva, 439 - Vila Maria, São Paulo - SP</p>
+    </div>
+    <p class="footer-copy">© 2026 Vidraçaria Zezinho. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511995611943?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." class="whatsapp" target="_blank" title="Fale conosco no WhatsApp">
+  <img src="assets/whatsapp-svgrepo-com.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
