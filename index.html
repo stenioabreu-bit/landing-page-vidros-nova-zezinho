@@ -3,113 +3,515 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Zezinho Vidros | Distribuidora e Instalação Sob Medida - São Paulo</title>
-  <meta name="description" content="26 anos de tradição em vidros. Distribuidora com instalação sob medida. Atendemos São Paulo, litoral e interior. Segurança, estética e durabilidade.">
+  <title>Nova Zezinho Vidros | Distribuidora e Instalação de Vidros em SP | 26 Anos de Experiência</title>
+  <meta name="description" content="Distribuidora de vidros em São Paulo com 26 anos de tradição. Vidros temperados, laminados, espelhos, box, portas e janelas. Instalação profissional. Atendemos Capital, Litoral e Interior. Orçamento grátis!">
+  <meta name="keywords" content="vidraçaria são paulo, distribuidora de vidros sp, vidros temperados, box de vidro, espelhos sob medida, portas de vidro, janelas de vidro, guarda corpo vidro, envidraçamento sacada, vidraçaria vila maria, instalação de vidros">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo_preta.png">
   <link rel="apple-touch-icon" href="assets/logo_preta.png">
   
   <!-- Open Graph / SEO -->
-  <meta property="og:title" content="Nova Zezinho Vidros | 26 Anos de Tradição">
-  <meta property="og:description" content="Aliamos o rigor técnico de uma distribuidora à precisão de uma instalação sob medida. Segurança, estética e durabilidade.">
+  <meta property="og:title" content="Nova Zezinho Vidros | Distribuidora de Vidros SP | 26 Anos">
+  <meta property="og:description" content="Distribuidora de vidros com instalação sob medida. 26 anos de experiência. Vidros temperados, laminados, box, espelhos. Atendemos toda SP.">
   <meta property="og:image" content="assets/logo_preta.png">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vidrosnovazezinho.com.br">
+  <meta property="og:locale" content="pt_BR">
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nova Zezinho Vidros | Distribuidora SP">
+  <meta name="twitter:description" content="26 anos de tradição em vidros. Distribuidora com instalação profissional.">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.vidrosnovazezinho.com.br">
+  
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nova Zezinho Vidros",
+    "image": "assets/logo_preta.png",
+    "description": "Distribuidora de vidros com 26 anos de experiência. Instalação profissional de vidros temperados, laminados, box, espelhos, portas e janelas.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Guaranésia, 1383",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "02112-002",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.521,
+      "longitude": -46.591
+    },
+    "telephone": "+55-11-2955-6515",
+    "email": "contato@vidrosnovazezinho.com.br",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "priceRange": "$$",
+    "areaServed": ["São Paulo", "Litoral Paulista", "Interior de São Paulo"]
+  }
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; color: #1a1a1a; line-height: 1.6; background: #fafafa; }
+    body { font-family: 'Inter', sans-serif; color: #2b2b2b; line-height: 1.6; background: #ffffff; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
     
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; letter-spacing: -0.5px; }
+    
+    /* Glass Effect */
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .glass-dark {
+      background: rgba(43, 43, 43, 0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
     /* Header */
-    header { background: #fff; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid #eee; }
+    header { 
+      background: rgba(255, 255, 255, 0.7); 
+      backdrop-filter: blur(40px) saturate(180%); 
+      -webkit-backdrop-filter: blur(40px) saturate(180%);
+      padding: 24px 0; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      z-index: 100; 
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+      box-shadow: 0 4px 30px rgba(31, 38, 135, 0.1), inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+    }
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
-    .logo img { height: 80px; }
-    nav { display: flex; gap: 32px; }
-    nav a { text-decoration: none; color: #555; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; position: relative; }
-    nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #5a2ca0; transition: width 0.3s ease; }
-    nav a:hover { color: #5a2ca0; }
+    .logo { 
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: translateY(-2px);
+    }
+    .logo img { height: 85px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); }
+    nav { display: flex; gap: 40px; }
+    nav a { 
+      text-decoration: none; 
+      color: #2b2b2b; 
+      font-weight: 600; 
+      font-size: 0.95rem; 
+      transition: all 0.3s ease; 
+      position: relative;
+      padding: 8px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 0.85rem;
+    }
+    nav a::after { 
+      content: ''; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      width: 0; 
+      height: 3px; 
+      background: linear-gradient(90deg, #9d1b19, #7a1513); 
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    nav a:hover { color: #9d1b19; transform: translateY(-2px); }
     nav a:hover::after { width: 100%; }
     
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 10px; font-weight: 600; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: none; cursor: pointer; font-size: 0.95rem; }
-    .btn-primary { background: linear-gradient(135deg, #5a2ca0, #2d0f52); color: #fff; box-shadow: 0 4px 15px rgba(90,44,160,0.3); }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(90,44,160,0.4); }
-    .btn-white { background: #fff; color: #5a2ca0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.8); }
-    .btn-outline:hover { background: #fff; color: #5a2ca0; border-color: #fff; transform: translateY(-3px); }
+    .btn { 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 10px; 
+      padding: 16px 32px; 
+      border-radius: 12px; 
+      font-weight: 700; 
+      text-decoration: none; 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+      border: none; 
+      cursor: pointer; 
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s;
+    }
+    .btn:hover::before {
+      left: 100%;
+    }
+    .btn-primary { 
+      background: linear-gradient(135deg, #9d1b19, #7a1513); 
+      color: #fff; 
+      box-shadow: 0 8px 25px rgba(157,27,25,0.4), 0 2px 8px rgba(157,27,25,0.3);
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+    .btn-primary:hover { 
+      transform: translateY(-4px); 
+      box-shadow: 0 12px 35px rgba(157,27,25,0.5), 0 4px 12px rgba(157,27,25,0.4);
+    }
+    .btn-white { 
+      background: rgba(255, 255, 255, 0.98); 
+      backdrop-filter: blur(10px); 
+      color: #9d1b19; 
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.1);
+      border: 2px solid rgba(157,27,25,0.2);
+    }
+    .btn-white:hover { 
+      transform: translateY(-4px); 
+      box-shadow: 0 12px 35px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+      background: #ffffff;
+    }
+    .btn-outline { 
+      background: rgba(255, 255, 255, 0.15); 
+      backdrop-filter: blur(10px); 
+      color: #fff; 
+      border: 3px solid rgba(255,255,255,0.9);
+      font-weight: 700;
+    }
+    .btn-outline:hover { 
+      background: rgba(255, 255, 255, 0.98); 
+      color: #9d1b19; 
+      border-color: #fff; 
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(255,255,255,0.3);
+    }
 </style>
 </head>
 <body>
 
 <style>
     /* Hero */
-    .hero { background: linear-gradient(rgba(90,44,160,0.7), rgba(45,15,82,0.7)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200') center/cover; min-height: 100vh; display: flex; align-items: center; padding-top: 80px; position: relative; overflow: hidden; }
-    .hero-content { position: relative; z-index: 1; max-width: 650px; }
-    .hero h1 { font-size: 3.5rem; color: #fff; margin-bottom: 24px; font-weight: 800; line-height: 1.1; }
-    .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.9); margin-bottom: 32px; }
-    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero { 
+      background: linear-gradient(135deg, rgba(157,27,25,0.9), rgba(122,21,19,0.85)), 
+                  url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200') center/cover; 
+      min-height: 100vh; 
+      display: flex; 
+      align-items: center; 
+      padding-top: 80px; 
+      position: relative; 
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(1px);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(157,27,25,0.3) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 700px; }
+    .hero h1 { 
+      font-family: 'Poppins', sans-serif; 
+      font-size: 4rem; 
+      color: #fff; 
+      margin-bottom: 28px; 
+      font-weight: 900; 
+      line-height: 1.05; 
+      text-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
+      letter-spacing: -1px;
+    }
+    .hero p { 
+      font-size: 1.2rem; 
+      color: rgba(255,255,255,0.95); 
+      margin-bottom: 36px; 
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      font-weight: 500;
+      line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 20px; flex-wrap: wrap; }
     
     /* Section */
-    section { padding: 100px 0; }
-    .section-header { text-align: center; margin-bottom: 60px; }
-    .section-header span { display: inline-block; background: rgba(90,44,160,0.1); color: #5a2ca0; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 16px; }
-    .section-header h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 12px; }
-    .section-header p { color: #666; font-size: 1.1rem; max-width: 500px; margin: 0 auto; }
+    section { padding: 120px 0; }
+    .section-header { text-align: center; margin-bottom: 70px; }
+    .section-header span { 
+      display: inline-block; 
+      background: linear-gradient(135deg, rgba(157,27,25,0.15), rgba(157,27,25,0.08)); 
+      color: #9d1b19; 
+      padding: 10px 24px; 
+      border-radius: 30px; 
+      font-size: 0.8rem; 
+      font-weight: 700; 
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border: 2px solid rgba(157,27,25,0.2);
+    }
+    .section-header h2 { 
+      font-family: 'Poppins', sans-serif; 
+      font-size: 3rem; 
+      font-weight: 900; 
+      margin-bottom: 16px; 
+      color: #2b2b2b;
+      letter-spacing: -1px;
+    }
+    .section-header p { color: #666; font-size: 1.15rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
     
     /* Services */
-    .services { background: #fff; }
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-    .service-card { background: #fff; border-radius: 20px; padding: 36px; border: 1px solid #eee; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-    .service-card:hover { border-color: #5a2ca0; transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.1); }
-    .service-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #5a2ca0, #2d0f52); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; transition: all 0.3s ease; }
-    .service-card:hover .service-icon { transform: scale(1.1) rotate(5deg); }
-    .service-icon svg { width: 32px; height: 32px; stroke: #fff; fill: none; stroke-width: 2; }
-    .service-card h3 { font-size: 1.25rem; margin-bottom: 8px; font-weight: 700; }
-    .service-card p { color: #666; font-size: 0.95rem; }
+    .services { 
+      background: linear-gradient(180deg, #ffffff 0%, #bfc3c7 100%); 
+      position: relative;
+    }
+    .services::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.3);
+      pointer-events: none;
+    }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; position: relative; z-index: 1; }
+    .service-card { 
+      background: rgba(255, 255, 255, 0.25); 
+      backdrop-filter: blur(40px) saturate(200%); 
+      -webkit-backdrop-filter: blur(40px) saturate(200%);
+      border-radius: 28px; 
+      padding: 40px; 
+      border: 1.5px solid rgba(255, 255, 255, 0.3); 
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #9d1b19, #7a1513);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+    .service-card:hover { 
+      background: rgba(255, 255, 255, 0.35);
+      border-color: rgba(157, 27, 25, 0.4); 
+      transform: translateY(-12px) scale(1.02); 
+      box-shadow: 0 20px 60px rgba(157,27,25,0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    }
+    .service-icon { 
+      width: 72px; 
+      height: 72px; 
+      background: linear-gradient(135deg, #9d1b19, #7a1513); 
+      border-radius: 20px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin-bottom: 28px; 
+      transition: all 0.4s ease; 
+      box-shadow: 0 8px 25px rgba(157,27,25,0.4), 0 2px 8px rgba(157,27,25,0.3);
+      position: relative;
+    }
+    .service-icon::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, #9d1b19, #7a1513);
+      border-radius: 20px;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .service-card:hover .service-icon { 
+      transform: scale(1.15) rotate(8deg); 
+      box-shadow: 0 12px 35px rgba(157,27,25,0.5), 0 4px 12px rgba(157,27,25,0.4);
+    }
+    .service-card:hover .service-icon::after {
+      opacity: 0.5;
+      filter: blur(10px);
+    }
+    .service-icon svg { width: 36px; height: 36px; stroke: #fff; fill: none; stroke-width: 2.5; }
+    .service-card h3 { 
+      font-family: 'Poppins', sans-serif; 
+      font-size: 1.35rem; 
+      margin-bottom: 12px; 
+      font-weight: 800; 
+      color: #2b2b2b;
+      letter-spacing: -0.3px;
+    }
+    .service-card p { color: #666; font-size: 0.98rem; line-height: 1.7; }
     
     /* About */
-    .about { background: #121417; color: #fff; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .about h2 { font-size: 2.5rem; margin-bottom: 24px; font-weight: 800; }
-    .about p { color: rgba(255,255,255,0.8); margin-bottom: 16px; font-size: 1.05rem; }
-    .about-img { background: linear-gradient(135deg, #5a2ca0, #2d0f52); height: 400px; border-radius: 24px; display: flex; align-items: center; justify-content: center; box-shadow: 0 25px 50px rgba(90,44,160,0.3); transition: all 0.4s ease; }
-    .about-img:hover { transform: scale(1.02); box-shadow: 0 30px 60px rgba(90,44,160,0.4); }
-    .about-img img { max-height: 200px; }
+    .about { 
+      background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 100%); 
+      color: #fff; 
+      position: relative;
+      overflow: hidden;
+    }
+    .about::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 80px,
+        rgba(255, 255, 255, 0.02) 80px,
+        rgba(255, 255, 255, 0.02) 81px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 80px,
+        rgba(255, 255, 255, 0.02) 80px,
+        rgba(255, 255, 255, 0.02) 81px
+      );
+      pointer-events: none;
+    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
+    .about h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 24px; font-weight: 800; }
+    .about p { color: rgba(255,255,255,0.85); margin-bottom: 16px; font-size: 1.05rem; }
+    .about-img { 
+      background: linear-gradient(135deg, rgba(157,27,25,0.9), rgba(122,21,19,0.9)); 
+      height: 400px; 
+      border-radius: 24px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      box-shadow: 0 25px 50px rgba(157,27,25,0.3); 
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-img::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 30px,
+        rgba(255, 255, 255, 0.05) 30px,
+        rgba(255, 255, 255, 0.05) 31px
+      );
+    }
+    .about-img:hover { transform: scale(1.02); box-shadow: 0 30px 60px rgba(157,27,25,0.4); }
+    .about-img img { max-height: 200px; position: relative; z-index: 1; }
 </style>
 
 <style>
     /* CTA */
-    .cta { background: linear-gradient(135deg, #5a2ca0 0%, #2d0f52 100%); text-align: center; padding: 80px 0; }
-    .cta h2 { color: #fff; font-size: 2.2rem; margin-bottom: 12px; font-weight: 800; }
-    .cta p { color: rgba(255,255,255,0.9); margin-bottom: 28px; font-size: 1.1rem; }
+    .cta { 
+      background: linear-gradient(135deg, #9d1b19 0%, #7a1513 100%); 
+      text-align: center; 
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.03);
+      pointer-events: none;
+    }
+    .cta h2 { color: #fff; font-size: 2.2rem; margin-bottom: 12px; font-weight: 800; font-family: 'Poppins', sans-serif; position: relative; z-index: 1; }
+    .cta p { color: rgba(255,255,255,0.9); margin-bottom: 28px; font-size: 1.1rem; position: relative; z-index: 1; }
     
     /* Contact */
-    .contact { background: #f3f4f6; }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
-    .contact h2 { font-size: 2rem; margin-bottom: 12px; font-weight: 800; }
+    .contact { background: linear-gradient(180deg, #bfc3c7 0%, #ffffff 100%); position: relative; }
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.25);
+      pointer-events: none;
+    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; position: relative; z-index: 1; }
+    .contact h2 { font-family: 'Poppins', sans-serif; font-size: 2rem; margin-bottom: 12px; font-weight: 800; color: #2b2b2b; }
     .contact > .container > .contact-grid > div:first-child > p { color: #666; margin-bottom: 32px; }
-    .contact-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; padding: 16px; border-radius: 12px; transition: all 0.3s ease; }
-    .contact-item:hover { background: rgba(90,44,160,0.05); transform: translateX(8px); }
-    .contact-icon { width: 52px; height: 52px; background: linear-gradient(135deg, #5a2ca0, #2d0f52); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-    .contact-icon:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 8px 20px rgba(90,44,160,0.3); }
+    .contact-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; padding: 16px; border-radius: 18px; transition: all 0.3s ease; background: rgba(255, 255, 255, 0.25); backdrop-filter: blur(40px) saturate(200%); -webkit-backdrop-filter: blur(40px) saturate(200%); border: 1.5px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 16px rgba(31, 38, 135, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+    .contact-item:hover { background: rgba(255, 255, 255, 0.35); transform: translateX(8px); box-shadow: 0 8px 24px rgba(31, 38, 135, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6); }
+    .contact-icon { width: 52px; height: 52px; background: linear-gradient(135deg, #9d1b19, #7a1513); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .contact-icon:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 8px 20px rgba(157,27,25,0.3); }
     .contact-icon svg { width: 24px; height: 24px; stroke: #fff; fill: none; stroke-width: 2; }
-    .contact-text strong { display: block; font-weight: 600; margin-bottom: 2px; }
+    .contact-text strong { display: block; font-weight: 600; margin-bottom: 2px; color: #2b2b2b; }
     .contact-text span { color: #666; }
     
-    .contact-form { background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.06); }
+    .contact-form { background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(40px) saturate(200%); -webkit-backdrop-filter: blur(40px) saturate(200%); padding: 40px; border-radius: 28px; box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5); border: 1.5px solid rgba(255, 255, 255, 0.3); }
     .form-group { margin-bottom: 20px; }
-    .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; }
-    .form-group input, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid #eee; border-radius: 10px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s; }
-    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #5a2ca0; }
+    .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; color: #2b2b2b; }
+    .form-group input, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid #bfc3c7; border-radius: 10px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s; background: rgba(255, 255, 255, 0.8); }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #9d1b19; background: #ffffff; }
     .form-group textarea { min-height: 120px; resize: vertical; }
     
     /* Footer */
-    footer { background: #121417; padding: 60px 0 24px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 24px; }
-    .footer-logo img { height: 55px; }
-    footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
+    footer { background: #2b2b2b; padding: 60px 0 24px; position: relative; }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+    }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 24px; position: relative; z-index: 1; }
+    .footer-logo img { height: 70px; }
+    footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; position: relative; z-index: 1; }
     .footer-copy { text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
     
     /* WhatsApp */
@@ -127,7 +529,7 @@
     .mobile-nav { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: #fff; padding: 100px 30px 30px; box-shadow: -5px 0 30px rgba(0,0,0,0.1); transition: right 0.3s ease; z-index: 100; display: flex; flex-direction: column; gap: 0; }
     .mobile-nav.active { right: 0; }
     .mobile-nav a { text-decoration: none; color: #2b2b2b; font-weight: 600; font-size: 1.1rem; padding: 16px 0; border-bottom: 1px solid #eee; transition: all 0.3s ease; }
-    .mobile-nav a:hover, .mobile-nav a.active { color: #5a2ca0; padding-left: 10px; }
+    .mobile-nav a:hover, .mobile-nav a.active { color: #9d1b19; padding-left: 10px; }
     .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 99; }
     .overlay.active { opacity: 1; visibility: visible; }
     
@@ -178,34 +580,34 @@ function toggleMenu() {
 }
 </script>
 
-<section class="hero">
+<section class="hero" itemscope itemtype="https://schema.org/Service">
   <div class="container">
     <div class="hero-content">
-      <h1>Nova Zezinho Vidros</h1>
-      <p>Aliamos o rigor técnico de uma distribuidora à precisão de uma instalação sob medida. Segurança, estética e durabilidade para sua casa ou negócio.</p>
+      <h1 itemprop="name">Nova Zezinho Vidros</h1>
+      <p itemprop="description">Aliamos o rigor técnico de uma distribuidora à precisão de uma instalação sob medida. Segurança, estética e durabilidade para sua casa ou negócio.</p>
       <div class="hero-btns">
-        <a href="https://wa.me/5511995611943?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." class="btn btn-white">
+        <a href="https://wa.me/5511995611943?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." class="btn btn-white" aria-label="Fale conosco pelo WhatsApp">
           <img src="assets/whatsapp-svgrepo-com.svg" alt="WhatsApp" style="width: 22px; height: 22px;">
           Fale no WhatsApp
         </a>
-        <a href="servicos.html" class="btn btn-outline">Ver Serviços</a>
+        <a href="servicos.html" class="btn btn-outline" aria-label="Ver todos os serviços">Ver Serviços</a>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="about" id="sobre">
+<section class="about" id="sobre" itemscope itemtype="https://schema.org/AboutPage">
   <div class="container">
     <div class="about-grid">
       <div>
-        <h2>Experiência que atravessa gerações: 26 anos de tradição em Vidros</h2>
-        <p>Fundada no ano 2000 por quem respira o ramo vidreiro desde 1980, a Nova Zezinho Vidros combina a precisão técnica de uma fornecedora com o cuidado de um serviço artesanal.</p>
+        <h2 itemprop="headline">Experiência que atravessa gerações: 26 anos de tradição em Vidros</h2>
+        <p itemprop="description">Fundada no ano 2000 por quem respira o ramo vidreiro desde 1980, a Nova Zezinho Vidros combina a precisão técnica de uma fornecedora com o cuidado de um serviço artesanal.</p>
         <p>Com sede em São Paulo e atendimento em todo o litoral e interior, entregamos muito mais que vidro: oferecemos a segurança e a inovação que seu projeto exige. Seja para instalações sob medida, reformas ou projetos de alto padrão, nossa história é o seu maior selo de garantia.</p>
-        <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-primary" style="margin-top: 24px;">Fale Conosco</a>
+        <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-primary" style="margin-top: 24px;" aria-label="Solicitar orçamento pelo WhatsApp">Fale Conosco</a>
       </div>
       <div class="about-img">
-        <img src="assets/logo_branca.png" alt="Nova Zezinho Vidros">
+        <img src="assets/logo_branca.png" alt="Logo Nova Zezinho Vidros - Distribuidora de Vidros em São Paulo">
       </div>
     </div>
   </div>
