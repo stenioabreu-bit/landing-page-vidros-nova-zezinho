@@ -214,8 +214,7 @@
 <style>
     /* Hero */
     .hero { 
-      background: linear-gradient(135deg, rgba(157,27,25,0.9), rgba(122,21,19,0.85)), 
-                  url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200') center/cover; 
+      background: linear-gradient(135deg, rgba(157,27,25,0.9), rgba(122,21,19,0.85)), url('fotos-servico/vidro.jpeg') center/cover; 
       min-height: 100vh; 
       display: flex; 
       align-items: center; 
@@ -244,7 +243,18 @@
       background: radial-gradient(circle at 20% 50%, rgba(157,27,25,0.3) 0%, transparent 50%);
       pointer-events: none;
     }
-    .hero-content { position: relative; z-index: 1; max-width: 700px; }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    .hero .container {
+      display: flex;
+      justify-content: flex-start;
+    }
+
     .hero h1 { 
       font-family: 'Poppins', sans-serif; 
       font-size: 4rem; 
@@ -366,9 +376,77 @@
       transform: scale(1.15) rotate(8deg); 
       box-shadow: 0 12px 35px rgba(157,27,25,0.5), 0 4px 12px rgba(157,27,25,0.4);
     }
+
+    .carousel-section {
+      overflow: hidden;
+      padding: 60px 0;
+      background: #1a1a1a;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+      animation: scroll-carousel 35s linear infinite;
+      width: max-content;
+    }
+
+    .carousel-track:hover {
+      animation-play-state: paused;
+    }
+
+    .carousel-slide img {
+      height: 300px;
+      width: 400px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+      filter: brightness(0.85);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .carousel-slide img:hover {
+      filter: brightness(1);
+      transform: scale(1.03);
+    }
+
+    @keyframes scroll-carousel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
     .service-card:hover .service-icon::after {
       opacity: 0.5;
       filter: blur(10px);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox-close {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 28px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .lightbox.active .lightbox-close {
+      display: block;
     }
     .service-icon svg { width: 36px; height: 36px; stroke: #fff; fill: none; stroke-width: 2.5; }
     .service-card h3 { 
@@ -578,6 +656,21 @@ function toggleMenu() {
   document.querySelector('.overlay').classList.toggle('active');
   document.body.style.overflow = document.querySelector('.mobile-nav').classList.contains('active') ? 'hidden' : '';
 }
+
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
 </script>
 
 <section class="hero" itemscope itemtype="https://schema.org/Service">
@@ -595,6 +688,32 @@ function toggleMenu() {
     </div>
   </div>
 </section>
+
+<section class="carousel-section">
+  <div class="carousel-track">
+    <div class="carousel-slide"><img src="fotos-servico/box-articulado.jpeg" alt="Box Articulado" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/escada-vidro.jpeg" alt="Escada de Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/espelho-led.jpeg" alt="Espelho com LED" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/vidro.jpeg" alt="Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/fechamento-divisoria.jpeg" alt="Fechamento" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/sacada-vidro-fume.jpeg" alt="Sacada Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/vidro-teto.jpeg" alt="Vidro teto" onclick="openLightbox(this)"></div>
+    <!-- duplicatas loop -->
+    <div class="carousel-slide"><img src="fotos-servico/box-articulado.jpeg" alt="Box Articulado" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/escada-vidro.jpeg" alt="Escada de Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/espelho-led.jpeg" alt="Espelho com LED" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/vidro.jpeg" alt="Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/fechamento-divisoria.jpeg" alt="Fechamento" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/sacada-vidro-fume.jpeg" alt="Sacada Vidro" onclick="openLightbox(this)"></div>
+    <div class="carousel-slide"><img src="fotos-servico/vidro-teto.jpeg" alt="Vidro teto" onclick="openLightbox(this)"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">✕</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
 
 
 <section class="about" id="sobre" itemscope itemtype="https://schema.org/AboutPage">
