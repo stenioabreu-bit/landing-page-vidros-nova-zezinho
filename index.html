@@ -8,13 +8,13 @@
   <meta name="keywords" content="vidraçaria são paulo, distribuidora de vidros sp, vidros temperados, box de vidro, espelhos sob medida, portas de vidro, janelas de vidro, guarda corpo vidro, envidraçamento sacada, vidraçaria vila maria, instalação de vidros">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logo_preta.png">
-  <link rel="apple-touch-icon" href="assets/logo_preta.png">
+  <link rel="icon" type="image/png" href="assets/logo_nome.PNG">
+  <link rel="apple-touch-icon" href="assets/logo_nome.PNG">
   
   <!-- Open Graph / SEO -->
   <meta property="og:title" content="Nova Zezinho Vidros | Distribuidora de Vidros SP | 26 Anos">
   <meta property="og:description" content="Distribuidora de vidros com instalação sob medida. 26 anos de experiência. Vidros temperados, laminados, box, espelhos. Atendemos toda SP.">
-  <meta property="og:image" content="assets/logo_preta.png">
+  <meta property="og:image" content="assets/logo_nome.PNG">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.vidrosnovazezinho.com.br">
   <meta property="og:locale" content="pt_BR">
@@ -33,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Nova Zezinho Vidros",
-    "image": "assets/logo_preta.png",
+    "image": "assets/logo_nome.PNG",
     "description": "Distribuidora de vidros com 26 anos de experiência. Instalação profissional de vidros temperados, laminados, box, espelhos, portas e janelas.",
     "address": {
       "@type": "PostalAddress",
@@ -113,7 +113,7 @@
     .logo:hover {
       transform: translateY(-2px);
     }
-    .logo img { height: 85px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); }
+    .logo img { height: 100px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1)); }
     nav { display: flex; gap: 40px; }
     nav a { 
       text-decoration: none; 
@@ -519,8 +519,8 @@
         rgba(255, 255, 255, 0.05) 31px
       );
     }
-    .about-img:hover { transform: scale(1.02); box-shadow: 0 30px 60px rgba(157,27,25,0.4); }
-    .about-img img { max-height: 200px; position: relative; z-index: 1; }
+    .about-img:hover { transform: scale(1.02); }
+    .about-img img { max-height: 400px; position: relative; z-index: 1; }
 </style>
 
 <style>
@@ -576,7 +576,7 @@
     .form-group textarea { min-height: 120px; resize: vertical; }
     
     /* Footer */
-    footer { background: #2b2b2b; padding: 60px 0 24px; position: relative; }
+    footer { background: #9d1b19; padding: 60px 0 24px; position: relative; }
     footer::before {
       content: '';
       position: absolute;
@@ -588,7 +588,7 @@
       pointer-events: none;
     }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 24px; position: relative; z-index: 1; }
-    .footer-logo img { height: 70px; }
+    .footer-logo img { height: 100px; }
     footer p { color: rgba(255,255,255,0.6); font-size: 0.9rem; position: relative; z-index: 1; }
     .footer-copy { text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
     
@@ -612,7 +612,50 @@
     .overlay.active { opacity: 1; visibility: visible; }
     
     @media (max-width: 768px) {
+      .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        align-items: flex-start;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-map iframe {
+        height: 250px;
+      }
+
+      .contact-map {
+        margin-top: 20px;
+      }
+
+      .contact-map iframe {
+        height: 200px;
+      }
+
+      .whatsapp {
+        bottom: 16px;
+        right: 16px;
+        width: 52px;
+        height: 52px;
+      }
+
       .hero h1 { font-size: 2.2rem; }
+
+      .hero p { font-size: 1rem; }
+
+      .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* já existem */
       .about-grid, .contact-grid { grid-template-columns: 1fr; }
       .about-img { height: 250px; }
       nav { display: none; }
@@ -625,7 +668,7 @@
 <header>
   <div class="container header-inner">
     <a href="#" class="logo">
-      <img src="assets/logo_preta.png" alt="Nova Zezinho Vidros">
+      <img src="assets/logo.PNG" alt="Nova Zezinho Vidros">
     </a>
     <nav>
       <a href="index.html" class="active">Início</a>
@@ -726,7 +769,7 @@ document.addEventListener('keydown', (e) => {
         <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-primary" style="margin-top: 24px;" aria-label="Solicitar orçamento pelo WhatsApp">Fale Conosco</a>
       </div>
       <div class="about-img">
-        <img src="assets/logo_branca.png" alt="Logo Nova Zezinho Vidros - Distribuidora de Vidros em São Paulo">
+        <img src="assets/logo_nome.PNG" alt="Logo Nova Zezinho Vidros - Distribuidora de Vidros em São Paulo">
       </div>
     </div>
   </div>
@@ -756,13 +799,17 @@ document.addEventListener('keydown', (e) => {
             <span>Rua Guaranésia, 1383 – CEP 02112-002 Vila Maria</span>
           </div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item" onclick="window.open('https://www.instagram.com/reel/DVycpOekSY7/', '_blank')" style="cursor: pointer;">
           <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/>
+            </svg>
           </div>
           <div class="contact-text">
-            <strong>Telefone</strong>
-            <span>(11) 2955-6515</span>
+            <strong>Instagram</strong>
+            <span>@novazezinhovidros</span>
           </div>
         </div>
         <div class="contact-item">
@@ -794,7 +841,7 @@ document.addEventListener('keydown', (e) => {
         </div>
       </div>
       <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7!2d-46.591!3d-23.521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzE1LjYiUyA0NsKwMzUnMjcuNiJX!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7!2d-46.591!3d-23.521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzE1LjYiUyA0NsKwMzUnMjcuNiJX!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="300" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -804,7 +851,7 @@ document.addEventListener('keydown', (e) => {
   <div class="container">
     <div class="footer-inner">
       <a href="#" class="footer-logo">
-        <img src="assets/logo_branca.png" alt="Nova Zezinho Vidros">
+        <img src="assets/logo.PNG" alt="Nova Zezinho Vidros">
       </a>
       <p>Rua Guaranésia, 1383 – CEP 02112-002 Vila Maria, São Paulo - SP</p>
     </div>
