@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^index\.html$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} /quem-somos\.html
+RewriteRule ^quem-somos\.html$ /quem-somos [R=301,L]
+
+RewriteCond %{THE_REQUEST} /servicos\.html
+RewriteRule ^servicos\.html$ /servicos [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]

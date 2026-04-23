@@ -84,6 +84,17 @@
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
+
+    .owlin-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 16px rgba(255,255,255,0.4);
+      transition: text-shadow 0.3s ease;
+    }
+    .owlin-link:hover {
+      text-shadow: 0 0 12px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,0.7), 0 0 40px rgba(255,255,255,0.4);
+    }
     
     .glass-dark {
       background: rgba(43, 43, 43, 0.7);
@@ -493,31 +504,21 @@
     .about h2 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 24px; font-weight: 800; }
     .about p { color: rgba(255,255,255,0.85); margin-bottom: 16px; font-size: 1.05rem; }
     .about-img { 
-      background: linear-gradient(135deg, rgba(157,27,25,0.9), rgba(122,21,19,0.9)); 
       height: 400px; 
       border-radius: 24px; 
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      box-shadow: 0 25px 50px rgba(157,27,25,0.3); 
       transition: all 0.4s ease;
       position: relative;
       overflow: hidden;
     }
-    .about-img::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 30px,
-        rgba(255, 255, 255, 0.05) 30px,
-        rgba(255, 255, 255, 0.05) 31px
-      );
+
+    .about-img img {
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 24px;
+      margin: 0 auto;
     }
     .about-img:hover { transform: scale(1.02); }
     .about-img img { max-height: 400px; position: relative; z-index: 1; }
@@ -769,7 +770,7 @@ document.addEventListener('keydown', (e) => {
         <a href="https://wa.me/5511995611943?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="btn btn-primary" style="margin-top: 24px;" aria-label="Solicitar orçamento pelo WhatsApp">Fale Conosco</a>
       </div>
       <div class="about-img">
-        <img src="assets/logo_nome.PNG" alt="Logo Nova Zezinho Vidros - Distribuidora de Vidros em São Paulo">
+        <img src="assets/Zezinho.png" alt="Logo Nova Zezinho Vidros - Distribuidora de Vidros em São Paulo">
       </div>
     </div>
   </div>
@@ -855,7 +856,10 @@ document.addEventListener('keydown', (e) => {
       </a>
       <p>Rua Guaranésia, 1383 – CEP 02112-002 Vila Maria, São Paulo - SP</p>
     </div>
-    <p class="footer-copy">© 2026 Nova Zezinho Vidros. Todos os direitos reservados.</p>
+    <p class="footer-copy">
+      © 2026 Nova Zezinho Vidros. Todos os direitos reservados. 
+      | Site desenvolvido por <a href="https://www.instagram.com/owlin.agency/" target="_blank" class="owlin-link">OWLIN</a>
+    </p>
   </div>
 </footer>
 

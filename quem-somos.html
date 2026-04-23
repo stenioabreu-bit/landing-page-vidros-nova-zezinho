@@ -98,6 +98,17 @@
     .btn:hover::before {
       left: 100%;
     }
+
+    .owlin-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 16px rgba(255,255,255,0.4);
+      transition: text-shadow 0.3s ease;
+    }
+    .owlin-link:hover {
+      text-shadow: 0 0 12px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,0.7), 0 0 40px rgba(255,255,255,0.4);
+    }
     .btn-primary { 
       background: linear-gradient(135deg, #9d1b19, #7a1513); 
       color: #fff; 
@@ -125,8 +136,7 @@
 
 <style>
     .page-hero { 
-      background: linear-gradient(135deg, rgba(157,27,25,0.85), rgba(122,21,19,0.85)), 
-                  url('https://media.istockphoto.com/id/2167770678/pt/foto/glaziers-place-a-large-sheet-of-thick-glass-on-the-table-by-hand-glass-work.webp?a=1&b=1&s=612x612&w=0&k=20&c=PVEEWF2Shgj3JrkUG-xUuJgdh42Tp_QoVqVT3uCCULU=') center 40%/cover; 
+      background: linear-gradient(135deg, rgba(157,27,25,0.85), rgba(122,21,19,0.85)), url('assets/VNZ.png') center 40%/cover; 
       padding: 200px 0 200px; 
       text-align: center;
       position: relative;
@@ -233,7 +243,7 @@
     
     .cta-section { 
       padding: 80px 0; 
-      background: linear-gradient(135deg, #9d1b19 0%, #7a1513 100%); 
+      background: #9d1b19; 
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -245,14 +255,13 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(255, 255, 255, 0.03);
       pointer-events: none;
     }
     .cta-section h2 { font-family: 'Poppins', sans-serif; color: #fff; font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; position: relative; z-index: 1; }
     .cta-section p { color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 32px; position: relative; z-index: 1; }
     
     footer { 
-      background: #2b2b2b; 
+      background: #9d1b19; 
       padding: 60px 0 24px;
       position: relative;
     }
@@ -263,7 +272,6 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.1);
       pointer-events: none;
     }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 24px; }
@@ -304,7 +312,7 @@
 <header>
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <img src="assets/logo_preta.png" alt="Nova Zezinho Vidros">
+      <img src="assets/logo.PNG" alt="Nova Zezinho Vidros">
     </a>
     <nav>
       <a href="index.html">Início</a>
@@ -361,7 +369,7 @@ function toggleMenu() {
       </div>
       <div class="about-img">
         <div class="about-img-main">
-          <img src="assets/logo_branca.png" alt="Nova Zezinho Vidros">
+          <img src="assets/logo.PNG" alt="Nova Zezinho Vidros">
         </div>
       </div>
     </div>
@@ -460,11 +468,14 @@ function toggleMenu() {
   <div class="container">
     <div class="footer-inner">
       <a href="index.html" class="footer-logo">
-        <img src="assets/logo_branca.png" alt="Nova Zezinho Vidros">
+        <img src="assets/logo.PNG" alt="Nova Zezinho Vidros">
       </a>
       <p>Rua Guaranésia, 1383 – CEP 02112-002 Vila Maria, São Paulo - SP</p>
     </div>
-    <p class="footer-copy">© 2026 Nova Zezinho Vidros. Todos os direitos reservados.</p>
+    <p class="footer-copy">
+      © 2026 Nova Zezinho Vidros. Todos os direitos reservados. 
+      | Site desenvolvido por <a href="https://www.instagram.com/owlin.agency/" target="_blank" class="owlin-link">OWLIN</a>
+    </p>
   </div>
 </footer>
 
